@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    background-color: lightseagreen;
+    font-size: 20px;
+}
+
+.header {
+    font-family: 'Poppins', sans-serif;
+    font-size: 80px;
+    text-align: center;
+    background-color: bisque;
+
+}
+
+.info-section,
+.answer-area {
+    font-family: 'sans-serif';
+    font-size: 20px;
+    text-align: center;
+    border-style: solid;
+    width: 900px;
+    border-color: black;
+    margin: auto;
+}
+
+#first-qtn {
+    border-style: solid;
+    width: 900px;
+    border-color: black;
+    margin: auto;
+}
+
+/**.answer1, .answer2{
+    border-style: solid;
+    border-color: black;
+    float: left;
+    width: 20%;
+    padding: 50px;
+}
+
+.answer3, .answer4 {
+    border-style: solid;
+    border-color: black;
+    float: left;
+    width: 20%;
+    padding: 50px;
+}
+**/
+#quiz-one {
+    border-style: solid;
+    width: 900px;
+    border-color: whitesmoke;
+    margin: 10px, 30px, 10px, 30px;
+}
+
+#second_qtn {
+    border-style: solid;
+    width: 900px;
+    border-color: black;
+    margin: auto;
+}
+
+#third_qtn {
+    border-style: solid;
+    width: 900px;
+    border-color: black;
+    margin: auto;
+}
+
+
+#forth-qtn {
+    border-style: solid;
+    width: 900px;
+    border-color: black;
+    margin: auto;
+}
+
+#fifth-qtn {
+    border-style: solid;
+    width: 900px;
+    border-color: black;
+    margin: auto;
+}
