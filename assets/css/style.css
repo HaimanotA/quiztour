@@ -1,92 +1,101 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    border: none;
+*, *::before, *::after{
+    box-sizing: border-box;
+    font-family:Montserrat, sans-serif,'Courier New', Courier;
+    margin: auto;
 }
+
 
 body {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
     background-color: lightseagreen;
     font-size: 20px;
+    width:900px; 
+    height:900px;
 }
 
-.header {
+.header{
     font-family: 'Poppins', sans-serif;
     font-size: 80px;
     text-align: center;
     background-color: bisque;
-
+    box-shadow: 0 0 10px 2px;
 }
 
-.info-section,
-.answer-area {
-    font-family: 'sans-serif';
+#heading{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.intro{
+    text-align: justify;
+    padding: 20px 10px;
+    margin-top: 20px 20px;
+    font-style: italic;
+}
+ 
+.info-container {
     font-size: 20px;
     text-align: center;
     border-style: solid;
-    width: 900px;
     border-color: black;
-    margin: auto;
+    box-shadow: 0 0 10px 2px;
+    background-color: bisque;
 }
 
-#first-qtn {
-    border-style: solid;
-    width: 900px;
-    border-color: black;
-    margin: auto;
+.container{
+   background-color: bisque;
+   border-radius: 5px;
+   padding:10px;
+   box-shadow: 0 0 10px 2px;
 }
 
-/**.answer1, .answer2{
-    border-style: solid;
-    border-color: black;
-    float: left;
-    width: 20%;
-    padding: 50px;
-}
+.buttons{
+   margin: 20px 0;
+   display:grid;
+   grid-template-columns: repeat(2,auto);
+   gap:10px;
+ }
+ 
+ body.correct{
+  --hue: var(--hue-correct);
+  }
 
-.answer3, .answer4 {
-    border-style: solid;
-    border-color: black;
-    float: left;
-    width: 20%;
-    padding: 50px;
-}
-**/
-#quiz-one {
-    border-style: solid;
-    width: 900px;
-    border-color: whitesmoke;
-    margin: 10px, 30px, 10px, 30px;
-}
+  body.wrong{
+    --hue: var(--hue-wrong);
+    }
+.btn{
+    padding: 5px 10px;
+    border-radius:5px;
+  }
 
-#second_qtn {
-    border-style: solid;
-    width: 900px;
-    border-color: black;
-    margin: auto;
-}
+  btn:hover{
+    border-color:black;
+  }
 
-#third_qtn {
-    border-style: solid;
-    width: 900px;
-    border-color: black;
-    margin: auto;
-}
+ .select-btn{
+    border-color:black;
+  }
 
+  .btn.correct{
+    --hue: var(--hue-correct);
+  }
 
-#forth-qtn {
-    border-style: solid;
-    width: 900px;
-    border-color: black;
-    margin: auto;
-}
+  .btn.wrong{
+    --hue: var(--hue-wrong);
+  }
 
-#fifth-qtn {
-    border-style: solid;
-    width: 900px;
-    border-color: black;
-    margin: auto;
-}
+  .select-btn{
+   font-size: 1em;
+   padding-right:10px;
+   width:100%;
+   display: flex;
+  }
+
+  .controls{
+   justify-content: center;
+   align-items: center;
+   margin-right: auto;
+  }
