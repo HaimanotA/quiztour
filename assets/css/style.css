@@ -6,7 +6,6 @@
     margin: auto;
 }
 
-
 body {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
@@ -45,7 +44,7 @@ body {
     background-color: bisque;
 }
 
-.container{
+.container, .score-area{
    background-color: bisque;
    border-radius: 5px;
    padding:10px;
@@ -56,19 +55,13 @@ body {
    margin: 20px 0;
    display:grid;
    grid-template-columns: repeat(2,auto);
-   gap:10px;
+   gap:20px;
  }
  
- body.correct{
-  --hue: var(--hue-correct);
-  }
-
-  body.wrong{
-    --hue: var(--hue-wrong);
-    }
 .btn{
-    padding: 5px 10px;
+    padding: 10px 10px;
     border-radius:5px;
+    width:300px;
   }
 
   btn:hover{
@@ -77,14 +70,6 @@ body {
 
  .select-btn{
     border-color:black;
-  }
-
-  .btn.correct{
-    --hue: var(--hue-correct);
-  }
-
-  .btn.wrong{
-    --hue: var(--hue-wrong);
   }
 
   .select-btn{

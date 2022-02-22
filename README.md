@@ -1,8 +1,9 @@
-# The Pioneers
+# trav.quiz
 
-The pioneers is a website which aims to provide the biography of world changing inventors. The site will mainly target the young generation. It is designed to  motivate, inspire and encourage its target through the real life stories and inventions of successful people. 
+trav.quiz is a general knowledge quiz site which is designed for people who are interested to know more about the places they would like to travel and for those who would like to entertain themselves by taking challenging quizzes about sepceific places.
 
-![Resposnive Mockup](documentation/readme1.png)
+The site mainly targets people who are enthusiastic about travel and provides them with basic information with online quizzes. trav.quiz is a fully responsive site that will provide questions to the user, calculates the grade and give them feedback. 
+
 
 ## Technologies used
 
@@ -16,10 +17,8 @@ This website is developed using HTML, CSS and JavaScript programming languages. 
 
 ## Features
 
- - The pioneers contain three pages,namely 'HOME', 'LIST OF PIONEERS' and 'SUBSCRIBE'.
+ - The trav.quiz contains 5 questions and each question has four options. 
  
- - The Homepage contains the hero header, navigation bar, images, quick facts, biography and at the very bottom of the web page links to social media.  
-
 ### Existing Features
 
 - __The hero header__
