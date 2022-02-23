@@ -1,9 +1,9 @@
 # trav.quiz
 
-trav.quiz is a general knowledge quiz site which is designed for people who are interested to know more about the places they would like to travel and for those who would like to entertain themselves by taking challenging quizzes about sepceific places.
+trav.quiz is a general knowledge quiz site which is designed for people who are interested to know more about the places they would like to travel and for those who would like to entertain themselves by taking challenging quizzes about specific places.
 
-The site mainly targets people who are enthusiastic about travel and provides them with basic information with online quizzes. trav.quiz is a fully responsive site that will provide questions to the user, calculates the grade and give them feedback. 
-
+The site mainly targets people who are enthusiastic about travel and it provides them basic information with online quizzes. trav.quiz is a fully responsive site that will provide questions to the user. After the user finished the questions the total grade will be calculated and a feedback will be given to the user.
+![cover page](documentation/quiz1.png)
 
 ## Technologies used
 
@@ -17,63 +17,37 @@ This website is developed using HTML, CSS and JavaScript programming languages. 
 
 ## Features
 
- - The trav.quiz contains 5 questions and each question has four options. 
+ - The trav.quiz contains 5 questions and each question has four options. The user is expected to select one answer to a question. 
+
+
+
+ 
+
+Existing Features
+The Love Maths Logo and Heading
+
+Featured at the top of the page, the Love Maths logo and heading is easy to see for the user. Upon viewing the page, the user will be able to see the name of the game.
  
 ### Existing Features
 
-- __The hero header__
-    -  At the top of the website, there is an oversized banner containing the logo of the website - 'The pioneers' and the logo slogan -'Get motivated'. Its purpose is to convey the site's overall purpose for the users.
-
-- __Navigation Bar__
-
-    - The navigation bar is designed horizontally and placed in the center on the top of the page.
-It contains the links to 'HOME', 'PIONEERS' and 'SUBSCRIBE'. 
-
-![Navigation bar](documentation/Readme2.png)
-
-1. HOME
-
-    - The home links take the user to the site's homepage. 
-It is repeated on the subscribe page as well to allow the user to easily return to the homepage without clicking the 'back' button. 
-
-2. LIST OF PIONEERS
-
-    - The 'list of pioneers' link is a clickable dropdown menu. The lists inside will be shown to the user when the button is clicked. 
-    - This menu allows the user to choose one value at a time. 
-    - With the dropdown menu, users are not expected to scroll down to reach the section they want. This helps to narrow user choices and save screen spaces. 
-
-![Dropdown Menu](documentation/readme3.png)
-3. SUBSCRIBE
-
-    - The subscribe page is where the user fills out the subscription form. 
-    - The form takes the full name and email address from the user. 
-    - The primary purpose of this page is to enable the user to receive inspirational and motivational stories from 'The Pioneers' via email.
-![Subscribe form](documentation/readme4.png)
-
-3.1 Confirmation page
-
-    - After the user correctly fill out and submitt the subscription form, he/she will be redirected to a new page. This new page will display a welcoming note for 10 seconds and then it will return the user to the homepage. If the user doesn't want to stay 10 seconds on this page, he/she can go to the homepage by clicking the Home link.
-
-![Confirmation page](documentation/readme5.png)
-- __Images__
-
-    - The Home page contains two portrait images. The images are included to catch users attention and to present the inventors.
+- __The trav.quiz Logo and heading__
+    -  At the top of the page, the trav.quiz logo and heading is placed. By seeinng the heading, it is easy for the user to understand the type of game provided.
 
 
-- __Quick facts section__
+- __The Question Section__
 
-    - This section highlights different facts about the pioneer presented. This will help the reader to quickly grasp the facts.
+This section will allow the user to take the online quiz. The user will be provided with five questions each containing 4 options. The user can select the answer by clicking the icon.
+
+- __The score box__
+
+Each quesiton will have a score box beside it that will show the score the user get by answering the question. 
+- __The Total Score Area__
+
+This section will allow the user to see the total score the user get after completing the test.
 
 
-- __Biography section__
 
-    - This section provides basic information about the pioneer's life. The reader discovers fascinating stories about their favorite icons here. 
 
-- __The footer__
-
-   - The footer section, placed at the bottom of the page, has links to social media. All of the links will open to a new tab so that the user stays on the website without distraction.
-
-   - This section is where visitors should go when they have a question and want to contact a specific individual in the organization. 
 
 ![Footer](documentation/readme6.png)
 ## Features left to implement
@@ -85,60 +59,35 @@ It is repeated on the subscribe page as well to allow the user to easily return 
 
 ## Testing
 
-  - The page is tested on different browsers like chrome, safari and Microsoft edge. It functions very well on the browsers.
-
-  - The following pages are screenshots taken from Microsoft edge browser.
-
-   ![homepage-edge](documentation/readme13.png)
-
-   ![subscribe-edge](documentation/readme14.png)
-
-   ![homepage-edge](documentation/readme15.png)
-
-
-
-
   - The page is responsive and maintains its integrity when viewed on different size screens. 
  
 
-![Mockup generator](documentation/readme16.png)
-
-  - The homepage link in the navigation menu, takes the user to the homepage if the user is on the subscribe page. 
-
-  - The clickable dropdown menu functions well, and when the user clicks the name of the pioneer the page jumps to that specific section.
-
-  - The subscribe page takes name, email and password. The user cannot submit without filling out its full name and email address. 
-
-  - The confirmation page displays the welcome message and shifts to the homepage in 10 seconds.
-
-  - The footer contains social media links and as it is intended all open in a new tab when clicked. 
 
 ### Validator Testing 
 
 #### HTML Code Validation
 
-I used the official W3C validation tool to test my code. I found no errors, but there is one acceptable warning present for a missing h2-h6.
-
+Using the official W3C validation tool to test the code,  no errors were found.
 - [index.html](https://validator.w3.org/nu/?doc=https://haimanota.github.io/the--pioneers/index.html)
     ![index.html validation](documentation/readme7.png)
 
-- [subscribe-form.html](https://validator.w3.org/nu/?doc=https://haimanota.github.io/the--pioneers/subscribe-form.html)
-    ![subscribe.html validation](documentation/readme9.png)
-
-- [confirmation.html](https://validator.w3.org/nu/?doc=https://haimanota.github.io/the--pioneers/confirmation.html)
-    
- ![confirmation.html validation](documentation/readme10.png)
 #### CSS Code Validation
 
-I used the official Jigaw validation tool to test my code. There are no errors or warnings present.
+Using the official Jigaw validation tool to test the code, no errors or warnings were present.
 
 - [style.css](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fhaimanota.github.io%2Fthe--pioneers)
 
 ![css validation](documentation/Readme11.png)
 
+#### JavaScript
+
+No errors were found when passing through the official Jshint validaton. 
+
 - Accessibility 
  
 ![Lighthouse](documentation/readme8.png)
+
+
 
 ### Unfixed Bugs
  - No bugs were discovered while creating and testing the project.
@@ -166,13 +115,13 @@ Alternatively, if using Gitpod, you can click below to create your own workspace
 
 **Content**
 
-- The biography for both the pioneers is taken from wikipedia. 
-- The text included in the 'Quick Facts' for Mark Zuckerbery is taken from the site [entrepreneur.com](https://www.entrepreneur.com/article/287422).
+- The five questions were taken from wikipedia.  [entrepreneur.com](https://www.entrepreneur.com/article/287422).
 - The text included in the 'Quick Facts' for Elon Musk is taken from the site [timepath.co](https://timepath.co/elon-musk).
 
 
 **Media**
-- Both of the images on the home page were taken from wikipedia.
+- The photos used on the home and sign up page are from This Open Source site
+- The images used for the gallery page were taken from this other open source site
 
 **Source Code**
 - The code for the clickable dropdown menu on the navigation bar was taken from  [w3schools.com](https://www.w3schools.com/howto/howto_js_dropdown.asp).

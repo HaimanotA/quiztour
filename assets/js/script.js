@@ -41,20 +41,18 @@ function incrementScore() {
 }
 
 function incrementWrongAnswer(){
-    
-}
+     Correct Answer: D  The Eiffel Tower was constructed on 1889 for the World Expo.
 
 function calculateTotalScore(){
-    
+  function myFunction() {
+
+  
 }
 */
 
 
 function myFunction() {
-  document.getElementById("select-btn").innerHTML = "Correct Answer: C  The tower is 324 meteres tall, about the same height as an 81-storey building, and the tallsest structure in Paris.";
+  document.getElementById("select-btn1").innerHTML = "Correct Answer: C  The tower is 324 meteres tall, about the same height as an 81-storey building, and the tallsest structure in Paris.";
 }
 
 
-function myFunction() {
-  document.getElementById("select-btn").innerHTML = "Correct Answer: C  The tower is 324 meteres tall, about the same height as an 81-storey building, and the tallsest structure in Paris.";
-}
