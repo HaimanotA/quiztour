@@ -9,17 +9,16 @@
 body {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
-    background-color: lightseagreen;
+    background-color: whitesmoke;
     font-size: 20px;
-    width:900px; 
-    height:900px;
+    width:auto; 
 }
 
 .header{
     font-family: 'Poppins', sans-serif;
     font-size: 80px;
     text-align: center;
-    background-color: bisque;
+    background-color:#009A44;
     box-shadow: 0 0 10px 2px;
 }
 
@@ -41,9 +40,46 @@ body {
     border-style: solid;
     border-color: black;
     box-shadow: 0 0 10px 2px;
-    background-color: bisque;
+    background-color:#FEDD00;
 }
 
+#eth1 {
+    background: url('../images/eth1.jpg')no-repeat;
+    margin-top: 20px;
+    width: 25%;
+    height: 300px;
+    display: inline;
+}
+
+#eth2 {
+    background: url('../images/eth2.jpg')no-repeat;
+    margin-top: 20px;
+    width: 25%;
+    height: 300px;
+    display: inline-block;
+    width:30%;
+}
+
+#eth3 {
+    background: url('../images/eth3.jpg')no-repeat;
+    margin-top: 20px;
+    width: 25%;
+    height: 300px;
+    display: inline-block; 
+}
+
+#footer{
+    font-size: 20px;
+    text-align: center;
+    background-color:#EF3340;
+    box-shadow: 0 0 10px 2px;
+    bottom:0;
+    position:absolute;
+    height:100px;
+    width:100%;
+}
+
+/**
 .container, .score-area{
    background-color: bisque;
    border-radius: 5px;
@@ -84,3 +120,4 @@ body {
    align-items: center;
    margin-right: auto;
   }
+**/
