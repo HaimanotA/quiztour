@@ -11,8 +11,6 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body>
-
     <body>
         <h1 class="header">trav.quiz</h1>
         <br>
@@ -26,15 +24,20 @@
         </div>
         <!--question-container-->
         <h1>Quiz about your destination country</h1>
-        <div class="quiz-container">
-            <div id="quiz"></div>
+        <div class="container">
+            <div id="question-container" class="hide"></div>
         </div>
+      <div id="question">Question</div>
+        <div id="answer buttons" class="button-grid">
             <button aria-label="Answer A" data-choice="0" class="btn">Answer A</button>
             <button aria-label="Answer B" data-choice="1" class="btn">Answer B</button>
             <button aria-label="Answer C" data-choice="2" class="btn">Answer C</button>
             <button aria-label="Answer D" data-choice="3" class="btn">Answer D</button>
-            <button id="previous">Previous Question</button>
-            <button id="previous">Next Question</button>
+        </div>
+        <div class="controls">
+            <button id="start-btn" class="start btn">start</button>
+            <button id="previous-btn">Previous Question</button>
+            <button id="next-btn">Next Question</button>
             <button id="submit">Submit Answer</button>
             <div id="results"></div>
         </div>
@@ -43,7 +46,7 @@
                     <p>This page is developed by: Haimanot Ayana</p>
                 </footer>
             </div>
-    </body>
+
 
     <script src="assets/js/script.js"></script>
 </body>
