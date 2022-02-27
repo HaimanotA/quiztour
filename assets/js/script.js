@@ -1,4 +1,4 @@
-/**Declare constants for DOM elements **/
+/**Declare constants for DOM elements 
 
 const startButton = document.getElementById("start-btn")
 const questionContainerBox = document.getElementById('question-container')
@@ -20,7 +20,22 @@ showQuestion(currentQuestionIndex)
 
 function showQuestion(question) { 
     questionElement.innerText = question.question
+}. **/
+
+const quizContainer = document.getElementById("quiz");
+const resultContainer = document.getElementById("results");
+const submitButton = document.getElementById("submit");
+const showAnswer =document.getElementById("select-btn");
+
+function constructQuiz(){
+  const output = [];
 }
+
+function showResults(){
+    
+}
+
+constructQuiz();
 
 const questions = [
     {
