@@ -81,8 +81,9 @@ body {
  
 .intro{margin-left: auto;
     margin-right: auto;
-    width:26em;
+    width:32em;
     text-align: justify;
+    font-size: 30px;
 }
 
 #coffee{
@@ -108,7 +109,6 @@ width: 25%;
 height: 400px;
 border-radius: 50px;
 float:left;
-padding:40px;
 }
 
 
@@ -149,6 +149,12 @@ padding:40px;
     box-shadow: 0 0 10px 2px;
 }
 
+.button-grid{
+   display: grid;
+   grid-template-columns: repeat(2,auto);
+   gap:10px;
+   width: 500px;
+}
 
 btn:hover {
     border-color: black;
@@ -180,3 +186,79 @@ btn:hover {
     margin: auto;
 }
 **/
+
+
+
+/** Media queries **/
+
+/** for larger to medium screen sizes, 1200px wide and below **/
+@media screen and (max-width: 1200px) {
+    .header-container {
+        width: 100%;
+        float: left;
+    }
+
+
+    #motto {
+        font-size:8vw;
+    }
+
+
+   /** #left-block,
+    #right-block {
+        width: 100%;
+    }
+
+    #hero-image1,
+    #hero-image2 {
+        width: 100%;
+        height: 300px;
+    }
+
+
+
+    #logo {
+        font-size: 50px;
+    }
+
+    footer {
+        font-size: 20px;
+        margin-right: 10rem;
+        margin-left: 12rem;
+    }
+
+
+    /** for medium screen sizes, 1024ppx wide and below 
+    @media screen and (max-width: 1024px) {
+
+       /** #celebs {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        nav a,
+        .dropbtn {
+            font-size: 10px;
+            height: 5px;
+            line-height: 5px;
+        }
+
+        body {
+            font-size: 14px;
+        }
+
+        footer {
+            font-size: 10px;
+            margin: auto 0;
+        }
+
+        #logo {
+            font-size: 2rem;
+            margin: auto 0;
+        }
+
+        #header {
+            margin: auto 0;
+        }
+    }
+} **/
