@@ -24,18 +24,18 @@ body {
 
 #motto {
     font-family: 'Poppins', sans-serif;
-    font-size: 10vw;
-    margin-top: 20px;
-    margin-right: 100px;
-    word-spacing: 10px;
-    position: relative;
-    float: right;
+    font-size: 8vw;
+    /** text-align: left; ** 
+   /* margin-left:auto;
+    margin-right:auto;
+    word-spacing: 10px; */
 }
 
+
 #logoimg1 {
-    background: url('../images/landingpage_img1.jpg')no-repeat;
+    background: url('../images/landingpagmotto_img1.jpg')no-repeat;
     width: 50%;
-    height: 100%;
+    height: 150px;
     float: left;
 }
 
@@ -44,8 +44,8 @@ body {
     border-style: solid;
     border-color: black;
     box-shadow: 0 0 10px 2px;
-    width: 100%;
-    height: 300px;
+    /** width: 100%; **/
+    height: 150px;
     background-color: #009A44;
 }
 
@@ -59,7 +59,7 @@ body {
 /**styling the info page **/
 .info-container {
     font-size: 20px;
-    text-align: center;
+    text-align: right;
     border-style: solid;
     border-color: black;
     box-shadow: 0 0 10px 2px;
@@ -68,32 +68,43 @@ body {
 
 
 .intro {
-    margin-left: auto;
-    margin-right: auto;
-    width: 32em;
+    /* margin-left: auto;
+    margin-right: auto; **/
+    width: 40 em;
     text-align: justify;
-    font-size: 30px;
+    font-size: 22px;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
 }
 
 #coffee {
     background: url('../images/landingpage_img3.jpg')no-repeat;
-    margin: 20px 50px 60px 50px;
-    width: 25%;
-    height: 200px;
+    margin: 20px 20px 20px 50px;
+    width: 20%;
+    height: 300px;
     border-radius: 50px;
-    float: right;
+    /** float:right; **/
 }
 
 
 #animal {
     background: url('../images/landingpage_img2.png')no-repeat;
-    margin-top: 20px 50px 60px 50px;
-    width: 25%;
-    height: 200px;
+    margin: 20px 50px 220px 50px;
+    width: 30%;
+    height: 300px;
     border-radius: 50px;
-    float: left;
+    /** float:right; **/
 }
-
 
 .btn {
     margin: 0;
@@ -125,7 +136,6 @@ body {
 }
 
 
-.container,
 .score-area {
     background-color: bisque;
     border-radius: 5px;
@@ -198,34 +208,17 @@ h3 {
     }
 
     #motto {
-        font-size: 8vw;
+        font-size: 10vw;
     }
 
-    /** for medium screen sizes, 1024ppx wide and below 
+
+    /** for medium screen sizes, 1024ppx wide and below **/
     @media screen and (max-width: 1024px) {
 
-       /** #celebs {
-            width: 100%;
-            margin: 0 auto;
+
+        #heading {
+            font-size: 16px;
         }
 
-    
-        body {
-            font-size: 14px;
-        }
-
-        footer {
-            font-size: 10px;
-            margin: auto 0;
-        }
-
-        #logo {
-            font-size: 2rem;
-            margin: auto 0;
-        }
-
-        #header {
-            margin: auto 0;
-        }
     }
-} **/
+}
