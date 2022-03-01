@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <!--Header-container-->
+    <!--Header container-->
     <div class="header-container">
         <div id="logoimg1"></div>
         <h1 id="motto">trav.quiz</h1>
@@ -22,18 +22,14 @@
     <br>
     <br>
 
-    <!--Message container-->
-
-
+    <!--Quiz container-->
     <h3>Quiz about your destination country</h3>
-
-    <!--question-container-->
     <div class="container">
         <div id="question-container" class="hide">
-            <h3></h3>
 
         </div>
         <div id="question"></div>
+        <br>
         <div id="answer-buttons" class="button-grid">
             <button aria-label="Answer A" data-choice="a" class="btn">Answer A</button>
             <button aria-label="Answer B" data-choice="b" class="btn">Answer B</button>
@@ -43,16 +39,20 @@
         <div class="controls">
             <button id="start-btn" class="start-btn">start</button>
             <button id="next-btn" class="next-btn">Next</button>
+            <button id="submit-btn" class="next-btn hide">Submit</button>
+            </div>
         </div>
-<p id="score"></p>
-        <footer>
-            <div id="footer">
-                <p>This page is developed by: Haimanot Ayana</p>
+<div id="results"></div>
+
+        <!--Footer container-->
+        <footer id="footer">
+            <div id="footer-text"> 
+            <p>Developed by: Haimanot Ayana</p>  
+            <p>Github:</p>
+            <p>linkedin:</p>
             </div>
         </footer>
 
         <script src="assets/js/script.js"></script>
 </body>
-
-
 </html>
