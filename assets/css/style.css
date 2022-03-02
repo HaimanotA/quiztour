@@ -131,22 +131,20 @@ footer {
     width: 500px;
 }
 
-btn:hover {
+.btn:not([disabled]):hover {
     border-color: black;
 }
 
-.select-btn {
-    font-size: 1em;
-    padding-right: 10px;
-    width: 100%;
-    display: flex;
-    border-color: black;
-}
-
-.start-btn {
-    font-size: 1rem;
-    font-weight: bold;
+.start-btn,
+.restart-btn {
+    font-size: 1.5em;
+    font-weight: bolder;
     padding: 10px 20px;
+    color: #0645B1;
+    background: linear-gradient(180deg,
+        rgba(0,154,68,0.5) 25%,
+        rgba(254,221,0,0.5) 50%,
+        rgba(239,51,64,0.5) 75%);
 }
 
 h2 {
@@ -162,8 +160,12 @@ h2 {
 
 #question {
     text-align: center;
-    margin-top: 20px;
+    margin: 20px;
     font-size: 24px;
+}
+
+#results {
+    text-align: center;
 }
 
 /** Media queries for medium screen sizes, 720px wide and below **/
