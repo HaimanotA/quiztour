@@ -1,32 +1,29 @@
-// Declare variables for DOM elements 
+/* jshint esversion: 8 */
 
+// Declare variables for DOM elements 
 const startButton = document.getElementById("start-btn");
-//const nextButton = document.getElementById("next-btn");
 const questionContainerElement = document.getElementById("question-container");
 const questionElement = document.getElementById("question");
 const answerElement = document.getElementById("answer-buttons");
 const restartButton = document.getElementById("restart-btn")
-//new 
-//const submitButton = document.getElementById('submit-btn');
 const resultContainer = document.getElementById('results');
 let currentQuestion;
 let currentQuestionIndex = 0;
 let correctAnswers = 0;
 const btns = document.querySelectorAll('.btn');
+let container = document.getElementById("container");
+let body = document.getElementsByTagName("body");
+
+// allow users to click start for the game
 startButton.addEventListener('click', buildQuiz);
-//nextButton.addEventListener('click', setNextQuestion);
-//submitButton.addEventListener('click', setNextQuestion);
-let container = document.getElementById("container")
-let body = document.getElementsByTagName("body")
 
 //function to generate the quiz
 function buildQuiz() {
-  startButton.classList.add('hide')
-  answerElement.classList.remove('hide')
-  // nextButton.classList.remove('hide')
-  currentQuestion = questions.sort()
-  questionContainerElement.classList.remove('hide')
-  setNextQuestion()
+  startButton.classList.add('hide');
+  answerElement.classList.remove('hide');
+  currentQuestion = questions.sort();
+  questionContainerElement.classList.remove('hide');
+  setNextQuestion();
 }
 
 
@@ -39,16 +36,15 @@ function showQuestion(question) {
   const btns = document.querySelectorAll('.btn');
   btns.forEach(btn => {
     let choice = btn.dataset.choice;
-    btn.innerHTML = `${question[choice]}`
+    btn.innerHTML = `${question[choice]}`;
     btn.addEventListener('click', function () {
-
       if (choice === question.answer) {
         correctAnswers = correctAnswers + 1;
-        btn.classList.add('correct')
-        getNextQuestion()
+        btn.classList.add('correct');
+        getNextQuestion();
       } else {
-        btn.classList.add('incorrect')
-        getNextQuestion()
+        btn.classList.add('incorrect');
+        getNextQuestion();
       }
     });
   });
@@ -58,9 +54,8 @@ function getNextQuestion() {
   btns.forEach(btn => {
     btn.disabled = true;
     setTimeout(() => {
-      btn.classList.remove('correct', 'incorrect')
+      btn.classList.remove('correct', 'incorrect');
       btn.disabled = false;
-
     }, 1000);
   });
   setNextQuestion()
@@ -68,35 +63,31 @@ function getNextQuestion() {
 
 // function to set the question
 function setNextQuestion() {
-
   // let answerElement = document.getElementById("answer-buttons");
   if (currentQuestionIndex == (questions.length)) {
-    //alert("You have completed the quiz!");
-    questionElement.innerHTML = "Your result is :- " +
+    // alert("You have completed the quiz!");
+    questionElement.innerHTML = "Your result is : " +
       correctAnswers.toString() + "/" + questions.length;
-    //nextButton.classList.add('hide')
-    answerElement.classList.add('hide')
-    //submitButton.classList.add('hide')
-    restartButton.classList.remove('hide')
- //   return;
+    answerElement.classList.add('hide');
+    restartButton.classList.remove('hide');
+    // return;
   }
   // else {
-    console.log(currentQuestionIndex)
-    //answerElement.replaceWith(answerElement.cloneNode(true));
-    showQuestion(currentQuestion[currentQuestionIndex])
-  
-    console.log(currentQuestionIndex)
- // }
+  console.log(currentQuestionIndex);
+  // answerElement.replaceWith(answerElement.cloneNode(true));
+  showQuestion(currentQuestion[currentQuestionIndex]);
+  console.log(currentQuestionIndex);
+  // }
 }
 
 //function to show results
 function showResults() {
-  questionElement.innerHTML = question.question
+  questionElement.innerHTML = question.question;
 }
 
 restartButton.addEventListener('click', function () {
-  location.reload()
-})
+  location.reload();
+});
 
 const questions = [{
   "question": "What is the approximate population of Ethiopia in 2022?",
