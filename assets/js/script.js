@@ -19,8 +19,20 @@ function buildQuiz() {
   startButton.classList.add('hide');
   questionElement.classList.remove('hide');
   answerElement.classList.remove('hide');
-  currentQuestion = questions.sort();
+  // shuffle all questions randomly
+  currentQuestion = shuffleQuestions(questions);
   setNextQuestion();
+}
+
+// https://stackoverflow.com/a/2450976 (Fisher-Yates / Knuth Shuffle)
+function shuffleQuestions(questions) {
+  let currentIndex = questions.length, randomIndex;
+  while (currentIndex != 0) {
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+    [questions[currentIndex], questions[randomIndex]] = [questions[randomIndex], questions[currentIndex]];
+  }
+  return questions;
 }
 
 // function to set the question
