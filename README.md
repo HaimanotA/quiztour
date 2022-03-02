@@ -17,16 +17,9 @@ This website is developed using HTML, CSS and JavaScript programming languages. 
 
 ## Features
 
- - The trav.quiz contains 5 questions and each question has four options. The user is expected to select one answer to a question. 
+ - The trav.quiz contains 5 questions and each has four options. The user is expected to select one answer to one question. 
 
 
-
- 
-
-Existing Features
-The Love Maths Logo and Heading
-
-Featured at the top of the page, the Love Maths logo and heading is easy to see for the user. Upon viewing the page, the user will be able to see the name of the game.
  
 ### Existing Features
 
@@ -47,14 +40,10 @@ This section will allow the user to see the total score the user get after compl
 
 
 
-
-
 ![Footer](documentation/readme6.png)
 ## Features left to implement
 
-   - Currently the site contains the biography of two pioneers. In the future it aims to include the biography and inventions of many more.
-
-   -  To facilitate the search process a search engine will be developed.
+   - Currently the site contains a quiz for only one city/country. In the future, it aims to add a search engine an travellers can select their destination city/country and take the quiz.
 
 
 ## Testing
@@ -116,7 +105,6 @@ Alternatively, if using Gitpod, you can click below to create your own workspace
 **Content**
 
 - The five questions were taken from wikipedia.  [entrepreneur.com](https://www.entrepreneur.com/article/287422).
-- The text included in the 'Quick Facts' for Elon Musk is taken from the site [timepath.co](https://timepath.co/elon-musk).
 
 
 **Media**
