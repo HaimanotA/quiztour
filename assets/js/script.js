@@ -1,81 +1,102 @@
 // Declare variables for DOM elements 
 
 const startButton = document.getElementById("start-btn");
-const nextButton = document.getElementById("next-btn");
+//const nextButton = document.getElementById("next-btn");
 const questionContainerElement = document.getElementById("question-container");
 const questionElement = document.getElementById("question");
 const answerElement = document.getElementById("answer-buttons");
+const restartButton = document.getElementById("restart-btn")
 //new 
-const submitButton = document.getElementById('submit-btn');
+//const submitButton = document.getElementById('submit-btn');
 const resultContainer = document.getElementById('results');
 let currentQuestion;
-var currentQuestionIndex = 0;
-var correctAnswers = 0;
+let currentQuestionIndex = 0;
+let correctAnswers = 0;
 const btns = document.querySelectorAll('.btn');
 startButton.addEventListener('click', buildQuiz);
-nextButton.addEventListener('click', setNextQuestion);
+//nextButton.addEventListener('click', setNextQuestion);
+//submitButton.addEventListener('click', setNextQuestion);
 let container = document.getElementById("container")
 let body = document.getElementsByTagName("body")
 
 //function to generate the quiz
 function buildQuiz() {
-  console.log('Started')
   startButton.classList.add('hide')
+  answerElement.classList.remove('hide')
+  // nextButton.classList.remove('hide')
   currentQuestion = questions.sort()
   questionContainerElement.classList.remove('hide')
   setNextQuestion()
 }
 
 
+
 // function to 
 
 function showQuestion(question) {
-  console.log("showquestion")
-  console.log(question)
-  console.log(question.answer)
+  currentQuestionIndex = currentQuestionIndex + 1;
   questionElement.innerHTML = question.question;
   const btns = document.querySelectorAll('.btn');
   btns.forEach(btn => {
     let choice = btn.dataset.choice;
-    console.log(choice)
     btn.innerHTML = `${question[choice]}`
     btn.addEventListener('click', function () {
-      console.log('event-listener')
 
       if (choice === question.answer) {
-        console.log(correctAnswers);
         correctAnswers = correctAnswers + 1;
-
-        //correctAnswers++;
+        btn.classList.add('correct')
+        getNextQuestion()
       } else {
-        
+        btn.classList.add('incorrect')
+        getNextQuestion()
       }
     });
   });
-
 }
 
+function getNextQuestion() {
+  btns.forEach(btn => {
+    btn.disabled = true;
+    setTimeout(() => {
+      btn.classList.remove('correct', 'incorrect')
+      btn.disabled = false;
+
+    }, 1000);
+  });
+  setNextQuestion()
+}
 
 // function to set the question
 function setNextQuestion() {
-  if (currentQuestionIndex == (questions.length)) {
-    alert("You have completed the quiz!");
-    questionElement.innerHTML = "Your result is :- " + 
-   // document.getElementById("results").innerhtml ="Your result is:-"
-      correctAnswers.toString() + "/" + questions.length;
 
-    return;
+  // let answerElement = document.getElementById("answer-buttons");
+  if (currentQuestionIndex == (questions.length)) {
+    //alert("You have completed the quiz!");
+    questionElement.innerHTML = "Your result is :- " +
+      correctAnswers.toString() + "/" + questions.length;
+    //nextButton.classList.add('hide')
+    answerElement.classList.add('hide')
+    //submitButton.classList.add('hide')
+    restartButton.classList.remove('hide')
+ //   return;
   }
-  const answerElement = document.getElementById("answer-buttons");
-  answerElement.replaceWith(answerElement.cloneNode(true));
-  showQuestion(currentQuestion[currentQuestionIndex])
-  currentQuestionIndex = currentQuestionIndex + 1;
+  // else {
+    console.log(currentQuestionIndex)
+    //answerElement.replaceWith(answerElement.cloneNode(true));
+    showQuestion(currentQuestion[currentQuestionIndex])
+  
+    console.log(currentQuestionIndex)
+ // }
 }
 
 //function to show results
 function showResults() {
   questionElement.innerHTML = question.question
 }
+
+restartButton.addEventListener('click', function () {
+  location.reload()
+})
 
 const questions = [{
   "question": "What is the approximate population of Ethiopia in 2022?",
