@@ -14,37 +14,33 @@
 
 <body>
     <!--Header container-->
-    <div class="header-container">
+    <header class="header-container">
         <div id="logoimg1"></div>
         <h1 id="motto">trav.quiz</h1>
-    </div>
+    </header>
 
     <br>
     <br>
 
     <!--Quiz container-->
     <h3>Quiz about your destination country!</h3>
-    <div class="container" id="container">
-        <div id="question-container" class="hide">
-
-        </div>
-        <div id="question"></div>
+    <main class="container" id="container">
+        <section id="question-container" class="hide"></section>
+        <section id="question"></section>
         <br>
-        <div id="answer-buttons" class="button-grid hide">
+        <section id="answer-buttons" class="button-grid hide">
             <button aria-label="Answer A" data-choice="a" class="btn">Answer A</button>
             <button aria-label="Answer B" data-choice="b" class="btn">Answer B</button>
             <button aria-label="Answer C" data-choice="c" class="btn">Answer C</button>
             <button aria-label="Answer D" data-choice="d" class="btn">Answer D</button>
-        </div>
-        <div class="controls">
+        </section>
+        <section class="controls">
             <button id="start-btn" class="start-btn">start</button>
-            <!--<button id="next-btn" class="next-btn hide">Next</button>-->
-           <!--<button id="submit-btn" class="next-btn hide">Submit</button>--> 
             <button id="restart-btn" class="next-btn hide">Restart</button>
-        </div>
-    </div>
+        </section>
+    </main>
 
-    <div id="results"></div>
+    <aside id="results"></aside>
 
     <!--Footer container-->
 
@@ -56,7 +52,7 @@
         </div>
     </footer>
 
-    <script defer src="assets/js/script.js"></script>
-</body>
+    <script src="assets/js/script.js"></script>
 
+</body>
 </html>
