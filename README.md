@@ -1,10 +1,10 @@
 # trav.quiz
 
-trav.quiz is a site that presents general knowledge quiz to whomever is interested to know more about places they would like to travel to. It can also serve as an entertaining tool for those who would like to challenge their geographic awareness by taking quizzes about specific places.
+trav.quiz is a site that presents general knowledge quizzes to whomever is interested to know more about places they would like to travel to. It can also serve as an entertaining tool for those who would like to challenge their geographic awareness by taking quizzes about specific places.
 
 The site mainly targets people who are enthusiastic about travel and provides basic information through online quizzes with inbuilt answers. trav.quiz is a fully responsive site that is committed to provide accurate information to the user. The system automatically grades the exercise when the user finalizes the quiz.
 
-![cover page](documentation/mockup.png)
+![Responsive Mockup](documentation/mockup.png)
 
 
 ## Technologies used
@@ -17,72 +17,103 @@ This website is developed using HTML, CSS and JavaScript programming languages. 
  - Github is employed as code hosting platform, collaboration and securing our code against accidental or malicious loss.
  - Git is applied as a version control. 
 
-## Features
+## Existing Features
 
- - The trav.quiz contains 21 questions, each question having four choices. Each question contains only one correct answer that the user is expected to answer. 
-
+ The trav.quiz contains 21 questions, each having four choices. Each question contains only one correct answer that the user is expected to answer. 
  
-### Existing Features
+### The Landing Page
 
-- __The landing page__
+- __The header__
 
-## The header
-- The header comprises an Ethiopian flag and the site's name.
-    - This page welcomes a user with a header comprising an Ethiopian flag and site's name, welcome message, pictures of roasted coffee beans and colourful art works. The pictures are examples of what Ethiopia is known for. At the end of the welcoming text, a link that takes the user to the quiz is placed. 
+  - The header comprises an Ethiopian flag and the site's name.
 
-## The content
-- This page introduces travel.quiz and motivates the user to explore more about the places they plan to visit. It is also decorated with pictures of roasted coffee beans and colourful art works. The pictures are examples of what Ethiopia is known for. At the end of the welcoming text, a link that takes the user to the quiz is placed. 
+  - This page welcomes a user with a header comprising an Ethiopian flag and site's name, welcome message, pictures of roasted coffee beans and colourful art works. The pictures are examples of what Ethiopia is known for. At the end of the welcoming text, a link that takes the user to where the quiz is placed. 
 
-## The footer
-- The footer provides the contact address of the site developer and administrator. 
+![Header](documentation/header.png)
 
 
-- __The quiz section__
+- __The welcome message__
 
-- Clicking on the link at the end of the welcoming text takes the user to a new page that maintains the same header and footer as the landing page. In the middle of the new page, the user finds a start button that opens up to the first question.
+  - This page introduces trav.quiz and motivates the user to explore more about the places they plan to visit. It is also decorated with pictures of roasted coffee beans and colourful art works. The pictures are examples of what Ethiopia is known for. At the end of the welcoming text, a link that takes the user to the quiz is placed.
 
-## The Questions
-
-- This section provides the user with the actual questions. Five questions, each with four alternative choices, are presented in this section. Up on clicking on one of the choices provided, the choice will be highlighted green or red where green signifies correct answer and red incorrect. In one second after, after attempting to answer the first question, the page opens up to the next question automatically until all the five questions are completed.   
-
-## The score
-
-- Upon completing answering all the questions, the user will be prompted to click a submit button. This will produce a total score out óf five; and it will signify end of the exercise. 
+![Welcome](documentation/welcome.png)
 
 
-![Footer](documentation/readme6.png)
+- __The footer__
+
+  - The footer provides the contact address of the site developer and administrator. 
+
+![footer](documentation/footer.png)
+
+
+### The quiz section
+
+
+  - Clicking on the link at the end of the welcoming text takes the user to a new page that maintains the same header and footer as the landing page. In the middle of the new page, the user finds a start button that opens up to the first question.
+
+![quizstart](documentation/quiz.png)
+
+
+### The Questions
+
+- This section provides the user with the actual questions. Twenty one questions, each with four alternative choices, are presented in this section. Up on clicking on one of the choices provided, the choice will be highlighted green or red where green signifies correct answer and red incorrect. In one second after, after attempting to answer the first question, the page opens up to the next question automatically until all the questions are completed.  
+
+![quiz](documentation/choices.png)
+
+
+### The score
+
+- Upon completing answering all the questions, the user will be prompted to click a submit button. This will produce a total score out of twenty one; and it will signify end of the exercise. 
+
+![score](documentation/results.png)
+
+
+## Color Schemes
+
+- The colors used on the site
+
+![score](documentation/colors.png)
+
+
 ## Features left to implement
 
-   - Currently the site contains a quiz for only one city/country. In the future, it aims to add a search engine to enable travellers select their destination city/country and take respective quiz.
+   - Currently the site contains a quiz for only one city/country. In the future, it aims to add a search engine to enable travellers to select their destination city/country and take respective quizzes.
 
 
 ## Testing
 
   - The page is responsive and maintains its integrity when viewed on different screen sizes. 
 
-  - The page will be tested using various browsers such as Microsoft edge, Google Chrome, and safari. 
+  - The page is tested on various browsers such as Microsoft edge, Google Chrome, and safari. 
  
 
 ### Validator Testing 
 
+- HTML Code Validation
 
-#### HTML Code Validation
+  -  No errors were found when passing the official W3C validation tool. [index.html](https://validator.w3.org/nu/?doc=https://haimanota.github.io/quiztour/index.html)
 
-Using the official W3C validation tool to test the code,  no errors were found.
-- [index.html](https://validator.w3.org/nu/?doc=https://haimanota.github.io/the--pioneers/index.html)
-    ![index.html validation](documentation/readme7.png)
+    ![index.html validation](documentation/index-validation.png)
 
-#### CSS Code Validation
 
-Using the official Jigsaw validation tool to test the code, no errors or warnings were present.
+  -  No errors were found when passing the official W3C validation tool. [quiz.html](https://validator.w3.org/nu/?doc=https://haimanota.github.io/quiztour/quiz.html)
 
-- [style.css](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fhaimanota.github.io%2Fthe--pioneers)
+    ![quiz.html validation](documentation/quiz-validation.png)
 
-![css validation](documentation/Readme11.png)
 
-#### JavaScript
+- CSS Code Validation
 
-No errors were found when passing through the official Jshint validaton. 
+  - No errors or warnings were present when passing the W3C validation tool. [style.css](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fhaimanota.github.io/quiztour/ (CSS level 3 + SVG))
+
+![css validation](documentation/css-validation.png)
+
+
+- JavaScript code validation
+
+  - No errors were found when passing through the official Jshint validaton. [script.js](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fhaimanota.github.io%2Fthe--pioneers)
+
+ ![JS validation](documentation/js-validation.png)
+
 
 - Accessibility 
  
@@ -99,17 +130,17 @@ The site was deployed to GitHub pages. The steps to deploy are as follows:
   - From the source section drop-down menu, select the **Main** Branch, then click "Save".
   - The page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
-The live link can be found [here](https://haimanota.github.io/the--pioneers) 
+The live link can be found [here](https://haimanota.github.io/quiztour) 
 
 ### Local Deployment
 
 In order to make a local copy of this project, you can clone it. In your IDE Terminal, type the following command to clone my repository:
 
-- `git clone https://github.com/HaimanotA/the--pioneers.git`
+- `git clone https://github.com/HaimanotA/quiztour.git`
 
 Alternatively, if using Gitpod, you can click below to create your own workspace using this repository.
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/HaimanotA/the--pioneers)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/HaimanotA/quiztour)
 
 ## Credits
 
