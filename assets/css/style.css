@@ -6,7 +6,6 @@
 *::before,
 *::after {
     box-sizing: border-box;
-    /** font-family: Montserrat, sans-serif; **/
     margin: auto;
 }
 
@@ -114,7 +113,6 @@ footer {
     display: flex;
     grid-template-columns: repeat(2, auto);
     gap: 20px;
-    /* width: 400px; */
 }
 
 .score-area {

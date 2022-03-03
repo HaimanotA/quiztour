@@ -2,7 +2,7 @@
 
 trav.quiz is a site that presents general knowledge quizzes to whomever is interested to know more about places they would like to travel to. It can also serve as an entertaining tool for those who would like to challenge their geographic awareness by taking quizzes about specific places.
 
-The site mainly targets people who are enthusiastic about travel and provides basic information through online quizzes with inbuilt answers. trav.quiz is a fully responsive site that is committed to provide accurate information to the user. The system automatically grades the exercise when the user finalizes the quiz.
+The site mainly targets people who are enthusiastic about travel and provides basic information through online quizzes with inbuilt answers. trav.quiz is a fully responsive site that is committed to provide accurate information to the user. The system automatically grades the questions when the user finalizes the quiz.
 
 ![Responsive Mockup](documentation/mockup.png)
 
@@ -70,7 +70,7 @@ This website is developed using HTML, CSS and JavaScript programming languages. 
 
 ## Color Schemes
 
-- The colors used on the site
+- The colors green, blue and red are chosen to match with the flag of Ethiopia. A background-color of wheat is used as well to give the page a good contrast.
 
 ![score](documentation/colors.png)
 
@@ -84,19 +84,19 @@ This website is developed using HTML, CSS and JavaScript programming languages. 
 
   - The page is responsive and maintains its integrity when viewed on different screen sizes. 
 
-  - The page is tested on various browsers such as Microsoft edge, Google Chrome, and safari. 
+  - The page is tested on various browsers such as Microsoft edge, Google Chrome, and safari and it works perfectly.  
  
 
 ### Validator Testing 
 
 - HTML Code Validation
 
-  -  No errors were found when passing the official W3C validation tool. [index.html](https://validator.w3.org/nu/?doc=https://haimanota.github.io/quiztour/index.html)
+  -  No errors were found. Three warning messages were displayed when passing the official W3C validation tool. [index.html](https://validator.w3.org/nu/?doc=https://haimanota.github.io/quiztour/index.html)
 
     ![index.html validation](documentation/index-validation.png)
 
 
-  -  No errors were found when passing the official W3C validation tool. [quiz.html](https://validator.w3.org/nu/?doc=https://haimanota.github.io/quiztour/quiz.html)
+  -  No errors were found. Three warning messages were shown when passing the official W3C validation tool . [quiz.html](https://validator.w3.org/nu/?doc=https://haimanota.github.io/quiztour/quiz.html)
 
     ![quiz.html validation](documentation/quiz-validation.png)
 
@@ -110,7 +110,7 @@ This website is developed using HTML, CSS and JavaScript programming languages. 
 
 - JavaScript code validation
 
-  - No errors were found when passing through the official Jshint validaton. [script.js](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fhaimanota.github.io%2Fthe--pioneers)
+  - No errors were found when passing through the official Jshint validaton. [script.js](jshint.com)
 
  ![JS validation](documentation/js-validation.png)
 
@@ -150,7 +150,7 @@ Alternatively, if using Gitpod, you can click below to create your own workspace
 
 
 **Media**
-- The pictures on the landing page are taken from Google Photos. 
+- The three images on the landing page are taken from Google Photos. 
 
 
 **Source Code**
